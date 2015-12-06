@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+/public/assets
+/public/jspm_packages
+/public/css
+/.idea
+Homestead.yaml
+Homestead.json
+.env
+*.iml
