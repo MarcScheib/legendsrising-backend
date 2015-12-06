@@ -20,6 +20,9 @@ Route::group(['prefix' => 'api'], function () {
     Route::resource('user', 'UserController',
         ['only' => ['store']]);
 
+    Route::resource('profile', 'ProfileController',
+        ['only' => ['show']]);
+
     Route::resource('news', 'NewsController');
 });
 
