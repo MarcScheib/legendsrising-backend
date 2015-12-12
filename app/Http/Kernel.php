@@ -29,5 +29,7 @@ class Kernel extends HttpKernel
         'auth' => \LegendsRising\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \LegendsRising\Http\Middleware\RedirectIfAuthenticated::class,
+        'jwt.auth' => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
+        'jwt.refresh' => \Tymon\JWTAuth\Middleware\RefreshToken::class,
     ];
 }
