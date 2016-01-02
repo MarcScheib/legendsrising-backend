@@ -64,6 +64,18 @@ return [
             'strict'    => false,
         ],
 
+        'testing' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'legendsrising_test'),
+            'username'  => env('DB_USERNAME', 'legendsrising'),
+            'password'  => env('DB_PASSWORD', 'X4w6Fb98aVJM6LeT'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),
