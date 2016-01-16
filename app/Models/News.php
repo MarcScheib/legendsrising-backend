@@ -1,4 +1,5 @@
 <?php
+
 namespace LegendsRising\Models;
 
 use Illuminate\Database\Eloquent\Model;

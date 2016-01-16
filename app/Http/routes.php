@@ -28,4 +28,4 @@ Route::group(['prefix' => 'api'], function () {
 
 Route::get('/{slug}', function () {
     return view('bootstrap.index');
-})->where('slug', '([A-z\d-\/_.]+)?');;
+})->where('slug', '([A-z\d-\/_.]+)?');

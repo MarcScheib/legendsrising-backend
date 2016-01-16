@@ -8,6 +8,5 @@ class UserControllerTest extends TestCase
 
     public function testUserRegister()
     {
-
     }
 }

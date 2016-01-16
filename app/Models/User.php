@@ -1,4 +1,5 @@
 <?php
+
 namespace LegendsRising\Models;
 
 use Hash;
