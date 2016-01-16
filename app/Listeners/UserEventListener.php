@@ -18,6 +18,6 @@ class UserEventListener
     public function onUserRegistered(UserRegistered $event)
     {
         // Todo: implement event handling
-        Log::info("User Registered:" . $event->getUser()->username);
+        Log::info('User Registered:'.$event->getUser()->username);
     }
 }

@@ -13,19 +13,19 @@
 
 $factory->define(LegendsRising\Models\User::class, function (Faker\Generator $faker) {
     return [
-        'username' => $faker->name,
-        'email' => $faker->email,
-        'password' => bcrypt(str_random(10)),
+        'username'   => $faker->name,
+        'email'      => $faker->email,
+        'password'   => bcrypt(str_random(10)),
         'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime
+        'updated_at' => $faker->dateTime,
     ];
 });
 
 $factory->define(LegendsRising\Models\News::class, function (Faker\Generator $faker) {
     return [
-        'title' => $faker->title,
-        'text' => $faker->sentence,
+        'title'      => $faker->title,
+        'text'       => $faker->sentence,
         'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime
+        'updated_at' => $faker->dateTime,
     ];
 });

@@ -1,11 +1,10 @@
 <?php
+
 namespace LegendsRising\Http\Controllers;
 
 use Illuminate\Http\Request;
 use JWTAuth;
-use LegendsRising\Http\Requests;
 use Tymon\JWTAuth\Exceptions\JWTException;
-use Log;
 
 class AuthController extends Controller
 {
