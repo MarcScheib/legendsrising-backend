@@ -1,4 +1,7 @@
-## LegendsRising [![Build Status](https://travis-ci.org/MarcScheib/legendsrising-backend.svg?branch=master)](https://travis-ci.org/MarcScheib/legendsrising)
+# LegendsRising 
+
+[![Build Status](https://travis-ci.org/MarcScheib/legendsrising-backend.svg?branch=master)](https://travis-ci.org/MarcScheib/legendsrising)
+[![StyleCI](https://styleci.io/repos/47031317/shield)](https://styleci.io/repos/47031317)
 
 LegendsRising is a Massively Multiplayer Online Role-Playing Game, claiming player to One-vs-Many battles.
 
