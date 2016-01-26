@@ -15,6 +15,6 @@ class NewsController extends Controller
 
     public function show($id)
     {
-        return News::with('user')->find($id);
+        return News::with('user', 'comments')->find($id);
     }
 }

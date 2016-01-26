@@ -15,6 +15,11 @@ class News extends Model
         return $this->belongsTo('LegendsRising\Models\User');
     }
 
+    public function comments()
+    {
+        return $this->hasMany('LegendsRising\Models\Comment');
+    }
+
     public function scopeRecent($query)
     {
         return $query->orderBy('created_at', 'desc')->limit(self::RECENT_NEWS);
