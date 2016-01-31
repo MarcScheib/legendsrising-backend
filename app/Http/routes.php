@@ -25,6 +25,7 @@ Route::group(['prefix' => 'api'], function () {
         ['only' => ['show']]);
 
     Route::resource('news', 'NewsController');
+    Route::resource('news.comments', 'NewsCommentController');
 });
 
 Route::get('/{slug}', function () {
