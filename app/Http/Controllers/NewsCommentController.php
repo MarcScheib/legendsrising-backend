@@ -23,7 +23,7 @@ class NewsCommentController extends Controller
     public function store($newsId, Request $request)
     {
         $this->validate($request, [
-            'text' => 'required'
+            'text' => 'required',
         ]);
 
         $user = Auth::user();
