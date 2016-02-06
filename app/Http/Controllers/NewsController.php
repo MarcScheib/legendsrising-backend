@@ -1,9 +1,8 @@
 <?php
+
 namespace LegendsRising\Http\Controllers;
 
-use LegendsRising\Http\Requests;
 use LegendsRising\Models\News;
-use Log;
 
 class NewsController extends Controller
 {

@@ -3,6 +3,7 @@
 /public/assets
 /public/jspm_packages
 /public/css
+/public/img/avatar
 /.idea
 Homestead.yaml
 Homestead.json

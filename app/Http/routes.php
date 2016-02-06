@@ -13,6 +13,7 @@
 
 Route::group(['prefix' => 'api'], function () {
     Route::post('auth/signin', 'AuthController@signIn');
+    Route::get('auth/user', 'AuthController@user');
 
     Route::get('user/emailexist/{email}', 'UserController@isEmailExisting');
     Route::get('user/usernameexist/{username}', 'UserController@isUsernameExisting');
@@ -20,9 +21,13 @@ Route::group(['prefix' => 'api'], function () {
     Route::resource('user', 'UserController',
         ['only' => ['store']]);
 
+    Route::resource('profile', 'ProfileController',
+        ['only' => ['show']]);
+
     Route::resource('news', 'NewsController');
+    Route::resource('news.comments', 'NewsCommentController');
 });
 
 Route::get('/{slug}', function () {
     return view('bootstrap.index');
-})->where('slug', '([A-z\d-\/_.]+)?');;
+})->where('slug', '([A-z\d-\/_.]+)?');

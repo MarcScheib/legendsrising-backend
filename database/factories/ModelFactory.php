@@ -11,11 +11,21 @@
 |
 */
 
-$factory->define(LegendsRising\User::class, function (Faker\Generator $faker) {
+$factory->define(LegendsRising\Models\User::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->email,
-        'password' => bcrypt(str_random(10)),
-        'remember_token' => str_random(10),
+        'username'   => $faker->name,
+        'email'      => $faker->email,
+        'password'   => bcrypt(str_random(10)),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+    ];
+});
+
+$factory->define(LegendsRising\Models\News::class, function (Faker\Generator $faker) {
+    return [
+        'title'      => $faker->title,
+        'text'       => $faker->sentence,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
     ];
 });
