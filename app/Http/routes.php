@@ -24,6 +24,9 @@ Route::group(['prefix' => 'api'], function () {
     Route::resource('profile', 'ProfileController',
         ['only' => ['show']]);
 
+    Route::resource('faq', 'FaqController',
+        ['only' => ['index']]);
+
     Route::resource('news', 'NewsController');
     Route::resource('news.comments', 'NewsCommentController');
 });
