@@ -33,8 +33,8 @@ $factory->define(LegendsRising\Models\News::class, function (Faker\Generator $fa
 $factory->define(LegendsRising\Models\Faq::class, function (Faker\Generator $faker) {
     return [
         'question'      => $faker->title,
-        'answer'       => $faker->realText(),
-        'created_at' => $faker->dateTime,
-        'updated_at' => $faker->dateTime,
+        'answer'        => $faker->realText(),
+        'created_at'    => $faker->dateTime,
+        'updated_at'    => $faker->dateTime,
     ];
 });

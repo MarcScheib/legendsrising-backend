@@ -12,9 +12,9 @@ class FaqControllerTest extends TestCase
 
         $this->get('/api/faq')
             ->seeJson([
-                'id' => $faq->id,
+                'id'       => $faq->id,
                 'question' => $faq->question,
-                'answer' => $faq->answer
+                'answer'   => $faq->answer,
             ]);
     }
 }
