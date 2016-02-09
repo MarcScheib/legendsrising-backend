@@ -17,7 +17,7 @@ class NewsCommentController extends Controller
     {
         $comments = Comment::recent()->with('user')->where('news_id', $newsId)->get();
 
-        return $comments->reverse();
+        return $comments->reverse()->values();
     }
 
     public function store($newsId, Request $request)
