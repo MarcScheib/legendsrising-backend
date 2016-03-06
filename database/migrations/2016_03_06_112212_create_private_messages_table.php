@@ -32,6 +32,6 @@ class CreatePrivateMessagesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('faqs');
+        Schema::drop('private_messages');
     }
 }

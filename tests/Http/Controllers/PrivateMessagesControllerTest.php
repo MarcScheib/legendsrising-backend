@@ -2,11 +2,11 @@
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
-class UserControllerTest extends TestCase
+class PrivateMessagesControllerTest extends TestCase
 {
     use DatabaseMigrations;
 
-    public function testUserRegister()
+    public function testPrivateMessageCreate()
     {
     }
 }
