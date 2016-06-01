@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class News extends Model
 {
-    const RECENT_NEWS = 5;
-
     protected $table = 'news';
 
     public function user()
@@ -22,6 +20,6 @@ class News extends Model
 
     public function scopeRecent($query)
     {
-        return $query->orderBy('created_at', 'desc')->limit(self::RECENT_NEWS);
+        return $query->orderBy('created_at', 'desc');
     }
 }
